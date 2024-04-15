@@ -1,0 +1,63 @@
+.button{
+    -fx-font-family: "SansSerif";
+    -fx-background-color: #a48f8f;
+    -fx-border-color:linear-gradient(from 25% 25% to 100% 100%, #e0a5a5, #413636);
+    -fx-border-width: 2;
+}
+
+.buttonBar{
+    -fx-font-family: "SansSerif";
+    -fx-background-color: #b77575;
+    -fx-border-color: #886363;
+    -fx-border-width: 2;
+}
+
+.menuBar{
+    -fx-font-family: "SansSerif";
+    -fx-background-color: #da8e8e;
+    -fx-border-color: #937171;
+    -fx-border-width: 2;
+}
+
+.comboBox{
+    -fx-font-family: "SansSerif";
+    -fx-background-color: #e09393;
+    -fx-border-color: #6c5151;
+    -fx-border-width: 2;
+}
+
+.textField{
+    -fx-font-family: "SansSerif";
+    -fx-background-color: #ccb1b1;
+    -fx-border-color: #734c4c;
+    -fx-border-width: 2;
+}
+
+.tableView {
+    -fx-font-family: "SansSerif";
+
+    -fx-background-size: 1024px;
+    -fx-border-color: #d2a1a1;
+    -fx-border-width: 2;
+}
+
+.tableColumn{
+    -fx-font-family: "SansSerif";
+    -fx-background-color: #dabfbf;
+    -fx-border-color: #655151;
+    -fx-border-width: 1;
+}
+
+.HBox {
+    -fx-background-color: #C0C0C0;
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+    -fx-border-color: #999999;
+}
+
+.listView {
+
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+    -fx-border-color: #999999;
+}

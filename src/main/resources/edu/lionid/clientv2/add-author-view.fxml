@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="HBox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lionid.clientv2.controller.AddAuthorController">
+   <children>
+      <ListView fx:id="dataList" layoutX="286.0" layoutY="14.0" onMouseClicked="#onMouseClickDataList" prefHeight="324.0" prefWidth="300.0" styleClass="tableView" stylesheets="@style.css" />
+      <Label layoutX="12.0" layoutY="41.0" text="Фамилия">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="82.0" text="Имя">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="125.0" text="Отчество">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textLastname" layoutX="105.0" layoutY="41.0" promptText="Фамилия автора" styleClass="textField" stylesheets="@style.css" />
+      <TextField fx:id="textFirstname" layoutX="105.0" layoutY="82.0" promptText="Имя автора" styleClass="textField" stylesheets="@style.css" />
+      <TextField fx:id="textSurname" layoutX="105.0" layoutY="125.0" promptText="Отчество автора" styleClass="textField" stylesheets="@style.css" />
+      <ButtonBar layoutY="350.0" prefHeight="50.0" prefWidth="600.0" styleClass="buttonBar" stylesheets="@style.css">
+        <buttons>
+          <Button fx:id="addButton" mnemonicParsing="false" onAction="#addAction" onMouseClicked="#addAction" stylesheets="@style.css" text="Добавить" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteAction" onMouseClicked="#deleteAction" stylesheets="@style.css" text="Удалить" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelAction" onMouseClicked="#editModeHandler" stylesheets="@style.css" text="Отмена" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
